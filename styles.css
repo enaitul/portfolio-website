@@ -96,6 +96,13 @@ nav ul li a:hover::after {
     flex-basis: 60%;
     padding-left: 50px;
 }
+.about-col-2 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.8; 
+    font-size: 16px; 
+    color: #dddddd; 
+}
+
 .sub-title {
     font-size: 45px;
     font-weight: 500;
@@ -128,10 +135,11 @@ nav ul li a:hover::after {
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .tab-contents ul li span {
     color: #e6b800;
-    font-size: 14px;
+    font-size: 16px;
 }
 .tab-contents {
     display: none;
