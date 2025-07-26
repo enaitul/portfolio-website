@@ -13,9 +13,15 @@ function opentab(tabname){
 }
 
 var sidemenu = document.getElementById("sidemenu");
+var sidemenu = document.getElementById("sidemenu");
+var menuIcon = document.getElementById("menu-icon");
+
 function openmenu(){
     sidemenu.style.right = "0";
+    menuIcon.style.display = "none"; 
 }
+
 function closemenu(){
     sidemenu.style.right = "-200px";
+    menuIcon.style.display = "block"; 
 }
