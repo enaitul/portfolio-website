@@ -14,13 +14,16 @@
         <div class="container">
             <nav>
                 <img src="images/logo.jpg" class="logo">
-                <ul>
+                
+                <ul id="sidemenu">
                     <li> <a href="#header"> Home </a></li>
                     <li> <a href="#about"> About </a></li>
                     <li> <a href="#services"> Services </a></li>
                     <li> <a href="#portfolio"> Portfolio </a></li>
                     <li> <a href="#contact"> Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>CSE Undergraduate</p>
@@ -36,7 +39,7 @@
                     <img src="images/user.jpg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title"> About Me <br></h1>
+                    <h1 class="sub-title"> <u>About Me</u><br></h1>
                     <p>
                         <br> I'm Md Enaitul Hoque, a passionate and curious Computer Science and Engineering
                         undergraduate
@@ -91,19 +94,19 @@
             <h1 class="sub-title"> My Services</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
                     <p>Creating responsive and interactive websites using HTML, CSS, JavaScript, and Bootstrap.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-crop"></i>
                     <h2>Problem Solving</h2>
                     <p>Efficient solutions for complex problems using C++, C, and core Data Structures & Algorithms.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-app-store"></i>
                     <h2>Python Scripting</h2>
                     <p>Automation and scripting tasks using Python to boost productivity and streamline workflows.</p>
                     <a href="#">Learn more</a>
@@ -159,7 +162,7 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i>eprvleo@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+91 8167303772</p>
+                    <p><i class="fa-solid fa-phone"></i>8167303772</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/profile.php?id=100095126572766"><i
                                 class="fa-brands fa-facebook"></i></a>
