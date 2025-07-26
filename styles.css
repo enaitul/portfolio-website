@@ -361,7 +361,7 @@ nav .fa-solid  {
 
     }
   .header-text {
-    margin-top: 120%;
+    margin-top: 170%;
     padding-left: 25px;         
     padding-right: 0;
     margin-left: 0;         
@@ -378,14 +378,15 @@ nav .fa-solid  {
     nav .fas{
     display: block;
     font-size: 25px;
+    margin-right: 20px;
     }
     nav .fa-solid  {
     display: block;
     font-size: 25px;
 }
    nav ul {
-    background: rgba(255, 204, 0, 0.4); /* transparent yellow */
-    color: #fff; /* text color */
+    background: rgba(255, 204, 0, 0.4);
+    color: #fff; 
     position: fixed;
     top: 0;
     right: -200px;
@@ -404,6 +405,8 @@ nav .fa-solid  {
         position: absolute;
         margin: 25px;
         left: 25px;
+        
+        
         cursor: pointer;
 
     }
