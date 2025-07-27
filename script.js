@@ -25,3 +25,19 @@ function closemenu(){
     sidemenu.style.right = "-200px";
     menuIcon.style.display = "block"; 
 }
+
+function showMoreMessage(){
+     const msgSpan = document.getElementById("more-msg");
+        msgSpan.innerText = "Stay tuned. More projects coming soon.";
+        msgSpan.style.display = "inline";
+
+        setTimeout(() => {
+            msgSpan.style.display = "none";
+        }, 3000); 
+}
+
+function gitMessage() {
+    alert("Check out my Github profile for more information.");
+}
+
+
