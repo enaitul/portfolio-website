@@ -14,16 +14,17 @@
         <div class="container">
             <nav>
                 <img src="images/logo.jpg" class="logo">
-                
+
                 <ul id="sidemenu">
                     <li> <a href="#header"> Home </a></li>
                     <li> <a href="#about"> About </a></li>
                     <li> <a href="#services"> Services </a></li>
                     <li> <a href="#portfolio"> Portfolio </a></li>
                     <li> <a href="#contact"> Contact </a></li>
+                    <li> <a href="https://github.com/enaitul"><i class="fa-brands fa-github"></i> Github </a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars" id= "menu-icon" onclick="openmenu()"></i>
+                <i class="fas fa-bars" id="menu-icon" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>CSE Undergraduate</p>
@@ -40,12 +41,14 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title"> About Me </h1>
-                    <p style="margin-right: 90px; margin-top: 12px;" >
+                    <p style="margin-right: 90px; margin-top: 12px;">
 
-                         I'm Md Enaitul Hoque, a passionate and curious Computer Science and Engineering
-                        undergraduate with a strong interest in software development, web technologies, and problem-solving. I
+                        I'm Md Enaitul Hoque, a passionate and curious Computer Science and Engineering
+                        undergraduate with a strong interest in software development, web technologies, and
+                        problem-solving. I
                         love turning ideas into real-world applications and constantly strive to improve my skills
-                        through hands-on projects, coding challenges, and collaborative learning. With a growth mindset and a
+                        through hands-on projects, coding challenges, and collaborative learning. With a growth mindset
+                        and a
                         drive to innovate, I aim to build impactful solutions that make a difference.
                     </p>
                     <div class="tab-titles">
@@ -94,19 +97,21 @@
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
                     <p>Creating responsive and interactive websites using HTML, CSS, JavaScript, and Bootstrap.</p>
-                    <a href="#">Learn more</a>
+                    <a href="#portfolio">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>Problem Solving</h2>
                     <p>Efficient solutions for complex problems using C++, C, and core Data Structures & Algorithms.</p>
-                    <a href="#">Learn more</a>
+                    <a href="https://codolio.com/profile/enaitulhoque">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>Python Scripting</h2>
                     <p>Automation and scripting tasks using Python to boost productivity and streamline workflows.</p>
-                    <a href="#">Learn more</a>
+                    <a href="javascript:void(0);"  onclick="gitMessage()"> Learn more </a>
+                    <span id="git-msg"
+                        style="display:none; margin-left: 10px; color: rgb(254, 254, 254); font-weight: bold;"></span>
                 </div>
 
             </div>
@@ -123,7 +128,8 @@
                         <h3>Amazon Clone</h3>
                         <p>A responsive e-commerce homepage built using HTML and CSS, replicating the layout of Amazon.
                         </p>
-                        <a href="https://amazon-clone-wine-iota.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://amazon-clone-wine-iota.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
@@ -133,7 +139,8 @@
                         <h3>Netflix Landing Page</h3>
                         <p>A stylish landing page built with HTML, CSS, and Bootstrap to simulate Netflix’s homepage
                             design.</p>
-                        <a href="https://netflix-clone-jgpn.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://netflix-clone-jgpn.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
@@ -143,13 +150,15 @@
                         <h3>Simon Says Game</h3>
                         <p>An interactive memory game developed using HTML, CSS, and JavaScript, inspired by the classic
                             Simon game.</p>
-                        <a href="https://simonsays-game-js.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://simonsays-game-js.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
 
             </div>
-            <a href="#" class="btn"> See more </a>
+            <a href="javascript:void(0);" class="btn" onclick="showMoreMessage()"> See more </a>
+            <span id="more-msg" style="display:none; margin-left: 10px; color: yellow; font-weight: bold;"></span>
         </div>
     </div>
     <!-- ------------------------contact----------------------- -->
