@@ -360,6 +360,7 @@ nav .fa-solid  {
     #header{
         background-image: url(images/background-phone.jpg);
 
+
     }
   .header-text {
     margin-top: 170%;
@@ -371,6 +372,20 @@ nav .fa-solid  {
     width: 100%;             
     box-sizing: border-box;  
 }
+.header-text h1 span {
+    color: rgb(248, 231, 0); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px #000000; 
+    font-weight: bold; 
+}
+.header-text p{
+    color: rgb(248, 231, 0); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px #000000; 
+    font-weight: bold; 
+    font-size: 1.4rem;
+}
+
 
 
     .header-text h1{
@@ -451,5 +466,6 @@ nav .fa-solid  {
     margin-left: -90px; 
     width: 120px;       
 }
+
 
 }
