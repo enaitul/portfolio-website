@@ -33,6 +33,62 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#header {
+    padding-top: 100px; /* this makes room for the fixed nav */
+    height: 100vh;
+    background-image: url(images/WhatsApp\ Image\ 2025-07-22\ at\ 03.13.51_59fcd4b2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.header-text {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.header-text:hover {
+    transform: scale(1.05) translateY(-5px);
+    opacity: 0.95; 
+}
+
+.name-highlight {
+    position: relative;
+    color: #FFCC00;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.name-highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #FFCC00;
+    transition: width 0.4s ease;
+}
+
+.name-highlight:hover::after {
+    width: 100%;
+}
+
+
+
 nav ul li {
     display: inline-block;
     list-style: none;
