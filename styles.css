@@ -489,12 +489,20 @@ nav .fa-solid  {
     display: none;
 }
 @media only screen and (max-width: 600px){
-     #header::before {
-        background: url(images/background-phone.jpg) center/cover no-repeat;
-    }
-    #header::after {
-        background: none; /* or same as ::before */
-    }
+   #header {
+    background-image: url("images/background-phone.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+  }
+
+  /* Remove #header::before if you want JS to control it */
+  #header::before {
+    background: none;
+  }
+  #header::after {
+    background: none;
+  }
   .header-text {
     margin-top: 120%;
     padding-left: 25px;         
@@ -605,3 +613,5 @@ nav .fa-solid  {
 
 
 }
+
+
