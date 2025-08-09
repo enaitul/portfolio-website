@@ -489,10 +489,11 @@ nav .fa-solid  {
     display: none;
 }
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/background-phone.jpg);
-
-
+     #header::before {
+        background: url(images/background-phone.jpg) center/cover no-repeat;
+    }
+    #header::after {
+        background: none; /* or same as ::before */
     }
   .header-text {
     margin-top: 120%;
