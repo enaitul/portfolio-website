@@ -111,6 +111,7 @@ nav, .header-text {
 
 .header-text {
     transition: transform 0.4s ease, opacity 0.4s ease;
+    padding-top: 200px;
 }
 
 .header-text:hover {

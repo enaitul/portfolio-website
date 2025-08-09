@@ -92,3 +92,14 @@ if (closeIcon) {
         e.stopPropagation();
     });
 }
+const headerText = document.querySelector(".header-text");
+
+if (headerText) {
+    headerText.addEventListener("mouseenter", () => {
+        header.classList.add("hover-right");
+    });
+
+    headerText.addEventListener("mouseleave", () => {
+        header.classList.remove("hover-right");
+    });
+}
