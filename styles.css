@@ -21,11 +21,16 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+#about, #services, #portfolio, #contact {
+    padding-top: 80px; /* Same height as nav */
+}
+
 .logo {
     width: 140px;
     height: auto;
     position: relative;
-    left: 100px;
+    left: 20px;
 }
 nav {
     display: flex;
@@ -34,18 +39,15 @@ nav {
     flex-wrap: wrap;
 }
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  padding: 20px 5%;
+  z-index: 10000;  /* very high */
 }
+
 
 
 #header {
@@ -609,6 +611,13 @@ nav .fa-solid  {
   .logo {
     margin-left: -90px; 
     width: 120px;       
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+    position: relative;
+    left: 100px;
 }
 
 

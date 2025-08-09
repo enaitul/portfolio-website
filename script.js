@@ -14,6 +14,7 @@ function opentab(tabname) {
 
 var sidemenu = document.getElementById("sidemenu");
 var menuIcon = document.getElementById("menu-icon");
+var closeIcon = document.getElementById("close-icon");
 
 function openmenu() {
     sidemenu.style.right = "0";
@@ -61,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const originalBg = "images/background-phone.jpg";  // original
         const newBg = "images/download.jpeg";              // new
 
-        // Set initial "I'm" color to white
         if (iamText) {
             iamText.style.color = "white";
         }
@@ -71,9 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 ? `url('${originalBg}')`
                 : `url('${newBg}')`;
 
-            // Toggle "I'm" color between white and black
+            // Keep color white both times (your code toggled between white and white)
             if (iamText) {
-                iamText.style.color = toggled ? "white" : "black";
+                iamText.style.color = "white";
             }
 
             toggled = !toggled;
@@ -81,3 +81,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+if (menuIcon) {
+    menuIcon.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+}
+
+if (closeIcon) {
+    closeIcon.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
+}
