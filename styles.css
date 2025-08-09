@@ -77,7 +77,7 @@ nav {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("images/Remove\ background\ project\ \(1\).png") center/cover no-repeat;
+  background: url("images/hoverbackground.jpg") center/cover no-repeat;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   z-index: 0;
