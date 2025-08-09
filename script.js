@@ -40,4 +40,14 @@ function gitMessage() {
     alert("Check out my Github profile for more information.");
 }
 
+const header = document.getElementById("header");
+const rightZone = document.querySelector(".right-hover-zone");
+
+rightZone.addEventListener("mouseenter", () => {
+  header.classList.add("hover-right");
+});
+
+rightZone.addEventListener("mouseleave", () => {
+  header.classList.remove("hover-right");
+});
 

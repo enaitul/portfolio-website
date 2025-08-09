@@ -49,19 +49,70 @@ nav {
 
 
 #header {
-    padding-top: 100px; /* this makes room for the fixed nav */
+    padding-top: 0; 
     height: 100vh;
     background-image: url(images/WhatsApp\ Image\ 2025-07-22\ at\ 03.13.51_59fcd4b2.jpg);
     background-size: cover;
     background-position: center;
     
 }
+
+#header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Default background */
+#header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("images/WhatsApp\ Image\ 2025-07-22\ at\ 03.13.51_59fcd4b2.jpg") center/cover no-repeat;
+  z-index: 0;
+}
+
+/* Hover background */
+#header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("images/Remove\ background\ project\ \(1\).png") center/cover no-repeat;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 0;
+}
+
+/* Right-side hover zone */
+.right-hover-zone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  z-index: 2; /* above backgrounds but below nav/text */
+}
+
+/* When hovering right zone, show hover background */
+#header.hover-right::after {
+  opacity: 1;
+}
+
+
+/* Keep nav, logo, text above everything */
+nav, .header-text {
+  position: relative;
+  z-index: 3;
+}
+
+
 .header-text {
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .header-text:hover {
-    transform: scale(1.05) translateY(-5px);
+    transform: scale(1) translateY(-5px);
     opacity: 0.95; 
 }
 
@@ -144,7 +195,9 @@ nav ul li a:hover::after {
     padding-left: 60px;
 }
 .about-col-1 img {
-    width: 500px;
+    width: 490px;
+    margin-left: 20px;
+    margin-top: 40px;
     border-radius: 15px;
     position: relative;
 }
@@ -405,6 +458,29 @@ form .btn2 {
     margin-top: -40px;
     display: block;
 }
+
+.sub-title {
+  display: inline-block; /* so the underline matches text width */
+  position: relative;
+  cursor: pointer;
+}
+
+.sub-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* space below text */
+  width: 0;
+  height: 2px;
+  background-color: #FDE100; /* Dortmund Yellow */
+  transition: width 0.3s ease;
+}
+
+.sub-title:hover::after {
+  width: 100%;
+}
+
+
 /* =============CSS for small screen=========== */
 nav .fas {
     display: none;
